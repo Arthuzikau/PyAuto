@@ -26,6 +26,7 @@ def page() -> Page:
     playwright.stop()
 
 
+
 def get_firefox_browser(playwright) -> Browser:
     return playwright.firefox.launch(
         headless=config.playwright.IS_HEADLESS,
